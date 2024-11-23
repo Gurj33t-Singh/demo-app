@@ -1,0 +1,59 @@
+components:
+- components:
+  - layout_properties: {grid_position: 'VZWRDG,LVZIVK'}
+    name: phone_number_1
+    properties: {font: Sans, font_size: 18, placeholder: Phone Number}
+    type: TextBox
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'VZWRDG,FTNXFS'}
+    name: button_1
+    properties: {background: 'theme:Primary Container', font: Sans, font_size: 18, text: Search}
+    type: Button
+  - components:
+    - name: repeating_panel_1
+      properties: {item_template: ViewData.RowTemplate1}
+      type: RepeatingPanel
+    data_bindings: []
+    layout_properties: {full_width_row: true, grid_position: 'PYSKJV,FEEFTJ'}
+    name: data_grid_1
+    properties:
+      auto_header: true
+      columns:
+      - {data_key: phone_number, id: JKSDUP, title: Phone Number}
+      - {data_key: field1, id: VJQQOR, title: field1}
+      - {data_key: field2, id: OJLQEN, title: field2}
+      - {data_key: field3, id: LSDPMU, title: field3}
+      - {data_key: field4, id: SVQHPF, title: field4}
+      - {data_key: field5, id: BZJQMU, title: field5}
+      - {data_key: field6, id: WAPPYQ, title: field6}
+      - {data_key: field7, id: NMKEZE, title: field7}
+      - {data_key: field8, id: NPARFP, title: field8}
+      - {data_key: field9, id: SBCEED, title: field9}
+      - {data_key: field10, id: OAWDOW, title: field10}
+      rows_per_page: 10
+      show_page_controls: true
+      wrap_on: mobile
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- components:
+  - event_bindings: {click: link_1_click}
+    layout_properties: {}
+    name: link_1
+    properties: {background: 'theme:Primary Overlay 1', text: SignOn UI}
+    type: Link
+  data_bindings: []
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_1_copy
+  properties: {align: center, bold: false, font: Sans, font_size: 40, text: View Data}
+  type: Label
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
