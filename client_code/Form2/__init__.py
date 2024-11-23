@@ -1,8 +1,10 @@
-from ._anvil_designer import RowTemplate1Template
+from ._anvil_designer import Form2Template
 from anvil import *
+import anvil.server
+import stripe.checkout
 
 
-class RowTemplate1(RowTemplate1Template):
+class Form2(Form2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

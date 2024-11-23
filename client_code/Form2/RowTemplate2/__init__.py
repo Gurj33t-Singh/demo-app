@@ -1,5 +1,7 @@
 from ._anvil_designer import RowTemplate2Template
 from anvil import *
+import anvil.server
+import stripe.checkout
 
 
 class RowTemplate2(RowTemplate2Template):

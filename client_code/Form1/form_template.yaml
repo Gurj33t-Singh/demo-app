@@ -40,9 +40,13 @@ components:
     name: field_7
     properties: {font: Sans, font_size: 18, placeholder: Field 7, text: ''}
     type: TextBox
+  - layout_properties: {grid_position: 'IDGWPD,ILJASO'}
+    name: field_8
+    properties: {font: Sans, font_size: 18, placeholder: Field 8, text: ''}
+    type: TextBox
   - data_bindings: []
     layout_properties: {grid_position: 'MRTRPX,LQNHIV'}
-    name: field_8
+    name: field_9
     properties:
       font: Sans
       font_size: 18
@@ -50,16 +54,14 @@ components:
       items: [Data 1, Data 2, Data 3]
       placeholder: Field 8
     type: DropDown
-  - layout_properties: {grid_position: 'HQLNIO,QOOJRH'}
-    name: date_picker_1
-    properties: {font: Sans, font_size: 18, format: '%d / %m / %Y', pick_time: false, placeholder: Field 9}
-    type: DatePicker
   - data_bindings: []
+    event_bindings: {change: check_box_1_change}
     layout_properties: {full_width_row: false, grid_position: 'YTOWWA,TGJGKQ'}
     name: check_box_1
     properties: {align: left, checked: false, font: Sans, font_size: 18, text: Do you agree to the Terms & Conditions}
     type: CheckBox
-  - layout_properties: {grid_position: 'IPGAND,GFUOQP'}
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'IPGAND,GFUOQP'}
     name: button_1
     properties: {background: 'theme:Primary Container', bold: true, font: Sans, font_size: 16, icon: '', text: Submit}
     type: Button
@@ -67,7 +69,8 @@ components:
   name: content_panel
   properties: {col_widths: '{}'}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
+- data_bindings: []
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
