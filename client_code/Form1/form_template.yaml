@@ -4,10 +4,65 @@ components:
     name: label_1
     properties: {align: center, bold: false, font: Sans, font_size: 40, text: SignOn UI}
     type: Label
-  - layout_properties: {grid_position: 'KXIVGH,JNMMPS'}
+  - layout_properties: {grid_position: 'GCCSKO,GEYOGG'}
+    name: label_2
+    properties: {background: '', font: Sans, font_size: 28, text: 'Enter the details below:'}
+    type: Label
+  - layout_properties: {grid_position: 'GTMNBV,OKVMGH'}
     name: phone_number
-    properties: {font: Sans, text: Phone Number, visible: true}
+    properties: {font: Sans, font_size: 18, placeholder: Phone Number, text: ''}
     type: TextBox
+  - layout_properties: {grid_position: 'LDCXWA,BNYIOZ'}
+    name: field_1
+    properties: {font: Sans, font_size: 18, placeholder: Field 1, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'MOJKSX,RUYOTH'}
+    name: field_2
+    properties: {font: Sans, font_size: 18, placeholder: Field 2, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'VJEVYY,GOFXRY'}
+    name: field_3
+    properties: {font: Sans, font_size: 18, placeholder: Field 3, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'PNZWLT,ZATFLK'}
+    name: field_4
+    properties: {font: Sans, font_size: 18, placeholder: Field 4, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'SQHHUT,FSOXMF'}
+    name: field_5
+    properties: {font: Sans, font_size: 18, placeholder: Field 5, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'DUDIJC,BLIJOB'}
+    name: field_6
+    properties: {font: Sans, font_size: 18, placeholder: Field 6, text: ''}
+    type: TextBox
+  - layout_properties: {grid_position: 'NPPRRP,DEBXZW'}
+    name: field_7
+    properties: {font: Sans, font_size: 18, placeholder: Field 7, text: ''}
+    type: TextBox
+  - data_bindings: []
+    layout_properties: {grid_position: 'MRTRPX,LQNHIV'}
+    name: field_8
+    properties:
+      font: Sans
+      font_size: 18
+      include_placeholder: false
+      items: [Data 1, Data 2, Data 3]
+      placeholder: Field 8
+    type: DropDown
+  - layout_properties: {grid_position: 'HQLNIO,QOOJRH'}
+    name: date_picker_1
+    properties: {font: Sans, font_size: 18, format: '%d / %m / %Y', pick_time: false, placeholder: Field 9}
+    type: DatePicker
+  - data_bindings: []
+    layout_properties: {full_width_row: false, grid_position: 'YTOWWA,TGJGKQ'}
+    name: check_box_1
+    properties: {align: left, checked: false, font: Sans, font_size: 18, text: Do you agree to the Terms & Conditions}
+    type: CheckBox
+  - layout_properties: {grid_position: 'IPGAND,GFUOQP'}
+    name: button_1
+    properties: {background: 'theme:Primary Container', bold: true, font: Sans, font_size: 16, icon: '', text: Submit}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
